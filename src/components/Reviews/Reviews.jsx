@@ -14,8 +14,8 @@ export const Reviews = () => {
       })
       .catch(error => error);
   }, [movieId]);
-console.log(reviews)
- return reviews.length > 0 ? 
+// console.log(reviews)
+ return reviews?.length > 0 ? 
     <ul>
       {reviews.map(review => (
         <li key={review.id}>
