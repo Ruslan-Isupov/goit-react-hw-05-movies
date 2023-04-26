@@ -2,7 +2,7 @@ import { useSearchParams } from 'react-router-dom';
 import css from "./SearchFilmForm.module.css"
 
 export const SearchFilmForm = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [_, setSearchParams] = useSearchParams();
 
   const submitSeatch = e => {
     e.preventDefault();
