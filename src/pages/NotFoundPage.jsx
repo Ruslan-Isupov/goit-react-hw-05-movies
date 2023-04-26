@@ -2,7 +2,7 @@ const NotFoundPage = () => {
   return (
     <>
       <p>Not Found</p>
-      <img src="src\components\pageNotFou.nd.jpg" alt="not found page" />
+      <img src="src\components\pageNotFound.jpg" alt="not found page" />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import { Outlet, useParams } from 'react-router-dom';
 import { MovieDetails } from 'components/MovieDetails/MovieDetails';
-import { fetchMovieDetails } from 'API/api';
+import { fetchMovieDetails } from 'services/api';
 import { useEffect, useState } from 'react';
 import { AdditionalInformation } from 'components/AdditionalInformation/AdditionalInformation';
 
