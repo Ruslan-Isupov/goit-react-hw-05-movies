@@ -6,8 +6,8 @@ export const AdditionalInformation = () => {
         <div className={css.additionalBox}>
             <h3>Additional informaton</h3>
     <nav className={css.additionalInf}>
-              <NavLink to="cast">Cast</NavLink>
-              <NavLink to="reviews">Reviews</NavLink>
+                <NavLink className={css.additionalLink } to="cast">Cast</NavLink>
+              <NavLink className={css.additionalLink } to="reviews">Reviews</NavLink>
             </nav >
             </div>
 )

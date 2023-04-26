@@ -1,9 +1,9 @@
 import { useSearchParams } from 'react-router-dom';
-import css from "./SearchFilmForm.module.css"
+import css from './SearchFilmForm.module.css';
 
 export const SearchFilmForm = () => {
   const [, setSearchParams] = useSearchParams();
-  // const query = searchParams.get("query");
+
   const submitSeatch = e => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -14,7 +14,9 @@ export const SearchFilmForm = () => {
   return (
     <form onSubmit={submitSeatch}>
       <input className={css.inputFilm} type="text" name="query" />
-      <button className={css.buttonForm} type="submit">Search</button>
+      <button className={css.buttonForm} type="submit">
+        Search
+      </button>
     </form>
   );
 };

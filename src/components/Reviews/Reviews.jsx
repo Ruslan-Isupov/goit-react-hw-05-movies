@@ -1,7 +1,7 @@
 import { fetchMovieReviews } from 'API/api';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import css from "./Reviews.module.css"
+import css from './Reviews.module.css';
 
 export const Reviews = () => {
   const { movieId } = useParams();
@@ -14,8 +14,7 @@ export const Reviews = () => {
       })
       .catch(error => error);
   }, [movieId]);
-// console.log(reviews)
- return reviews?.length > 0 ? 
+  return reviews?.length > 0 ? (
     <ul>
       {reviews.map(review => (
         <li key={review.id}>
@@ -26,6 +25,7 @@ export const Reviews = () => {
         </li>
       ))}
     </ul>
-   : <p className={css.attention}>We don't have reviews</p>
-  ;
+  ) : (
+    <p className={css.attention}>We don't have reviews</p>
+  );
 };
