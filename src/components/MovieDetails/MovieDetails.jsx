@@ -6,7 +6,7 @@ import css from './MovieDetails.module.css';
 
 export const MovieDetails = ({ filmDetails }) => {
   const location = useLocation();
-  console.log(filmDetails)
+
   const genres = filmDetails.genres?.map(genre => genre.name).join(',');
   const voteRage = Math.round(filmDetails?.vote_average * 10);
   const imageUrl = `https://image.tmdb.org/t/p/w500/${
@@ -44,4 +44,4 @@ export const MovieDetails = ({ filmDetails }) => {
 };
 MovieDetails.propTypes = {
   filmDetails: PropTypes.object.isRequired,
-  };
+};
